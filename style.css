@@ -23,6 +23,24 @@ body {
   letter-spacing: 1px;
 }
 
+h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  letter-spacing: -0.4rem;
+  line-height: 2.2rem;
+}
+
+h2 {
+  font-size: 2.75rem;
+  font-weight: 500;
+  color: #1d1d1d;
+  text-transform: uppercase;
+  line-height: 3.3rem;
+}
+
 /*Fixed positioned header, nav and social link*/
 
 .main-header {
@@ -31,14 +49,7 @@ body {
   left: 0.2rem;
   margin: 0;
   padding: 0;
-  font-size: 1rem;
-  color: #ffffff;
-  text-transform: uppercase;
   text-decoration: none;
-  writing-mode: vertical-lr;
-  text-orientation: upright;
-  letter-spacing: -0.4rem;
-  line-height: 2.2rem;
 }
 
 .main-nav {
@@ -117,6 +128,7 @@ body {
 /*Section Two*/
 .home-section-two {
   display: flex;
+  flex-direction: column;
   grid-row: 2/3;
   grid-column: 1/2;
   height: 100vh;
@@ -125,6 +137,11 @@ body {
   background-size: cover;
   background-position: top 140px right 0;
   background-color: #e7e9eb;
+}
+
+.blurb {
+  width: 750px;
+  margin: 3.7rem 0 0 10.2rem;
 }
 
 /*Section Three*/
