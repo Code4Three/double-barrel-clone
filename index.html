@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -21,35 +22,40 @@
     <nav class="main-nav">
       <ul>
         <li>
-          <a href="#1">About</a>
+          <a class="h-link" href="#1">About</a>
         </li>
         <li>
-          <a href="#2">Device</a>
+          <a class="h-link" href="#2">Device</a>
         </li>
         <li>
-          <a href="#3">Where to buy</a>
+          <a class="h-link" href="#3">Where to buy</a>
         </li>
         <li>
-          <a href="#4">Events</a>
+          <a class="h-link" href="#4">Events</a>
         </li>
         <li>
-          <a href="#5">Press</a>
+          <a class="h-link" href="#5">Press</a>
         </li>
       </ul>
     </nav>
 
-    <div class="social-links">
-      <a href="https://www.instagram.com/">
-        <i class="fab fa-instagram"></i>
-      </a>
-    </div>
+    
+    <a class="social-link" href="https://www.instagram.com/">
+      <i class="fab fa-instagram"></i>
+    </a>
+    
 
     <!--start non-fixed page items-->
     
       <section class="home-section-one">
-        <nav class="scroll-down-nav">
+        <a class="h-link scroll-down-nav" href="#">
           Proceed with Caution
-        </nav>
+          <svg class="scroll-down-icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow">
+            <svg id="icon-arrow" viewBox="0 0 7 6"><title>&gt;</title><path d="M6.5.5v1.925L3.5 5.5l-3-3.075V.5l3 3.088z" fill="#EFEFEF" fill-rule="evenodd"></path></svg>
+          </use>
+        </svg>
+        </a>
       </section>
       <section class="home-section-two">
         <h2 class="blurb">

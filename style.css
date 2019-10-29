@@ -1,9 +1,12 @@
 /*Base CSS*/
-body {
+:root {
   font-size: 16px;
-  font-family: roboto-mono;
+}
+
+body {
+  font-size: 1rem;
+  font-family: 'Roboto Mono', monospace;
   margin: 0;
-  padding: 0;
 }
 
 .page-container {
@@ -12,21 +15,38 @@ body {
   grid-template-columns: 1vh, 1vh, 1vh, 1vh;
 }
 
+.h-link {
+  font-size: 1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
 /*Fixed positioned header, nav and social link*/
 
 .main-header {
   position: fixed;
-  top: 3rem;
-  left: 1rem;
+  top: 1.38rem;
+  left: 0.2rem;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  color: #ffffff;
   text-transform: uppercase;
+  text-decoration: none;
   writing-mode: vertical-lr;
   text-orientation: upright;
+  letter-spacing: -0.4rem;
+  line-height: 2.2rem;
 }
 
 .main-nav {
   position: fixed;
-  top: 3rem;
+  top: 1.38rem;
   width: 100%;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
 }
@@ -35,27 +55,63 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
-.main-nav ul li {
+.main-nav li {
   list-style: none;
+  margin: 0 0.94rem 0 0.94rem;
 }
 
-.social-links {
+.main-nav a:hover {
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid #ad9c62;
+}
+
+.social-link {
   position: fixed;
-  top: 2rem;
-  right: 2rem;
+  top: 1.15rem;
+  right: 2.5rem;
+  font-size: 1.52rem;
+}
+
+.social-link:visited {
+  color: #ffffff;
 }
 
 /*Section One*/
 .home-section-one {
   display: flex;
+  justify-content: center;
+  align-items: flex-end;
   grid-row: 1/2;
   grid-column: 1/2;
   height: 100vh;
+  box-sizing: border-box;
+  padding-bottom: 40px;
   background-image: url(img/2017_DoubleBarrel_Website_HeroImage.jpg);
-  background-size: auto 100%;
+  background-size: cover;
   background-position: center;
+}
+
+.scroller {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scroll-down-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 0.1875rem;
+}
+
+.scroll-down-icon {
+  height: 0.5rem;
+  width: 0.5rem;
+  margin-top: 0.455rem;
 }
 
 /*Section Two*/
@@ -82,10 +138,10 @@ body {
 }
 
 .about-us-article {
-  height: 60vw;
+  min-height: 38rem;
   width: 60vw;
   background-image: url(img/2017_DoubleBarrel_Website_OurStory.jpg);
   background-position: center;
-  background-size: auto 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
