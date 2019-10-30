@@ -15,14 +15,6 @@ body {
   grid-template-columns: 1vh, 1vh, 1vh, 1vh;
 }
 
-.h-link {
-  font-size: 1rem;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 1px;
-}
-
 h1 {
   font-size: 2rem;
   color: #ffffff;
@@ -39,6 +31,44 @@ h2 {
   color: #1d1d1d;
   text-transform: uppercase;
   line-height: 3.3rem;
+}
+
+.main-nav-link {
+  font-size: 1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.show-me-more {
+  display: inline-block;
+  margin: 0;
+  padding: 1.1rem 2.5rem;
+  border: 1px #ad9c62 solid;
+  color: #1d1d1d;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15rem;
+  background-color: transparent;
+  background-image: repeating-linear-gradient(
+    to left,
+    transparent,
+    transparent 50%,
+    #ad9c62 50%,
+    #ad9c62
+  );
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: background-position 0.25s cubic-bezier(0.43, -0.01, 1, 1),
+    background-color 0.3s cubic-bezier(0.43, -0.01, 1, 1);
+}
+
+.show-me-more:hover {
+  background-position: 0 0;
+  background-color: #ad9c62;
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 /*Fixed positioned header, nav and social link*/
@@ -142,6 +172,10 @@ h2 {
 .blurb {
   width: 750px;
   margin: 3.7rem 0 0 10.2rem;
+}
+
+.home-section-two .show-me-more {
+  margin: 2.5rem 0 0 10.2rem;
 }
 
 /*Section Three*/
