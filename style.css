@@ -1,4 +1,4 @@
-/*Base CSS*/
+/*!Base CSS*/
 :root {
   font-size: 16px;
 }
@@ -11,8 +11,8 @@ body {
 
 .page-container {
   display: grid;
-  grid-template-rows: 100%;
-  grid-template-columns: 1vh, 1vh, 1vh, 1vh;
+  grid-template-rows: repeat(3, 100vh);
+  grid-template-columns: 100%;
 }
 
 h1 {
@@ -75,7 +75,7 @@ h2 {
   text-decoration: underline;
 }
 
-/*Fixed positioned header, nav and social link*/
+/*!Fixed positioned header, nav and social link*/
 
 .main-header {
   position: fixed;
@@ -136,7 +136,7 @@ h2 {
   color: #ffffff;
 }
 
-/*Section One*/
+/*!----------Section One----------*/
 .home-section-one {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -148,7 +148,6 @@ h2 {
   -ms-flex-align: end;
   align-items: flex-end;
   grid-row: 1/2;
-  grid-column: 1/2;
   height: 100vh;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -191,7 +190,7 @@ h2 {
   margin-top: 0.455rem;
 }
 
-/*Section Two*/
+/*!----------Section Two----------*/
 .home-section-two {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -201,7 +200,6 @@ h2 {
   -ms-flex-direction: column;
   flex-direction: column;
   grid-row: 2/3;
-  grid-column: 1/2;
   height: 100vh;
   background-image: url(img/2017_DoubleBarrel_Website_ProductRow.jpg);
   background-repeat: no-repeat;
@@ -219,7 +217,7 @@ h2 {
   margin: 2.5rem 0 0 10.2rem;
 }
 
-/*Section Three*/
+/*!----------Section Three----------*/
 .home-section-three {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -231,15 +229,90 @@ h2 {
   -ms-flex-align: center;
   align-items: center;
   grid-row: 3/4;
-  grid-column: 1/2;
   height: 100vh;
+  background-color: #efefef;
 }
 
 .about-us-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   min-height: 38rem;
-  width: 60vw;
+  width: 52vw;
+  padding: 0 0 0 3.5rem;
   background-image: url(img/2017_DoubleBarrel_Website_OurStory.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.about-us-article,
+.about-us-article .show-me-more,
+.about-us-article h2 {
+  color: #ffffff;
+}
+
+.about-us-article h2 {
+  font-size: 1.875rem;
+  letter-spacing: 0.2rem;
+}
+
+.about-us-article .show-me-more {
+  width: fit-content;
+  margin: 0 0 2rem 0;
+}
+
+/*!----------Section Four----------*/
+.home-section-four {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #efefef;
+}
+
+.inst-img {
+  font-size: 2rem;
+  color: #000000;
+}
+
+.inst-link {
+  display: block;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px #ad9c62 solid;
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: #000000;
+}
+
+.home-sml-img-container {
+  display: grid;
+  grid-template-columns: repeat(3, 26vw);
+  grid-template-rows: repeat(6, 27vw);
+}
+
+.home-img-top {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.home-img-bot {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 3vw;
+  box-sizing: border-box;
+}
+
+.home-img-top img,
+.home-img-bot img {
+  height: 18vw;
+  width: 18vw;
+  border: 1px #ad9c62 solid;
 }
