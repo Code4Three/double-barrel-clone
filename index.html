@@ -19,6 +19,7 @@
   </head>
 
   <body>
+    <script src="script.js"></script>
     <!--Fixed positioned header, nav and social link-->
     <a class="main-header" href="#0">
       <h1>Double<br />Barrel</h1>
@@ -50,7 +51,8 @@
     <!--!start non-fixed page items-->
     <div class="page-container">
       <section class="home-section-one">
-        <a class="main-nav-link scroll-down-nav" href="#">
+        <!-- todo: fix accessability of smooth scroll and change of focus -->
+        <a class="main-nav-link scroll-down-nav" href="#scroll-to-target">
           Proceed with Caution
           <svg class="scroll-down-icon">
             <use
@@ -67,10 +69,10 @@
               </svg>
             </use>
           </svg>
-        </a>
+        </button>
       </section>
 
-      <section class="home-section-two">
+      <section id="scroll-to-target" class="home-section-two">
         <article class="blurb-article">
           <h2 class="blurb">
             Double Barrel is designed for one thing only—to deliver you the best
