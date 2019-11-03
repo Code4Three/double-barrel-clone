@@ -12,9 +12,15 @@ body {
   margin: 0;
 }
 
+.roboto-reg {
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  line-height: 24px;
+}
+
 .page-container {
   display: grid;
-  grid-template-rows: repeat(3, 100vh);
+  grid-template-rows: repeat(2, 100vh) 95vh;
   grid-template-columns: 100%;
 }
 
@@ -230,9 +236,9 @@ h2 {
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: flex-start;
+  padding-top: 3.8rem;
   grid-row: 3/4;
-  height: 100vh;
   background-color: #efefef;
 }
 
@@ -240,8 +246,8 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  min-height: 38rem;
-  width: 52vw;
+  height: 600px;
+  width: 600px;
   padding: 0 0 0 3.5rem;
   background-image: url(img/2017_DoubleBarrel_Website_OurStory.jpg);
   background-position: center;
@@ -256,13 +262,17 @@ h2 {
 }
 
 .about-us-article h2 {
+  margin: 0 0 1rem 0;
   font-size: 1.875rem;
   letter-spacing: 0.2rem;
 }
 
 .about-us-article .show-me-more {
   width: fit-content;
-  margin: 0 0 2rem 0;
+  margin: 0 0 3.6rem 0;
+}
+.about-us-article p {
+  margin: 0 0 1.4rem 0;
 }
 
 /*!----------Section Four----------*/
